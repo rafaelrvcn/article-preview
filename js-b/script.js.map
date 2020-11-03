@@ -1,1 +1,0 @@
-{"version":3,"sources":["../js/script.js"],"names":["console","log"],"mappings":"AAAAA,OAAO,CAACC,GAAR,CAAY,8BAAZ","sourcesContent":["console.log(\"Compilado através do Babel 7\");"],"file":"script.js"}
