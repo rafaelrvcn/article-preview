@@ -1,0 +1,1 @@
+console.log("Compilado através do Babel 7");

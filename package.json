@@ -1,0 +1,25 @@
+{
+  "name": "my-design",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./js/script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "babel": "babel-node ./js/script.js",
+    "build": "babel js -d js-b --source-maps",
+    "watch": "babel js -d js-b --source-maps --watch",
+    "start": "index.html"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/cli": "^7.12.1",
+    "@babel/core": "^7.12.3",
+    "@babel/preset-env": "^7.12.1"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0"
+  }
+}
