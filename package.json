@@ -2,6 +2,7 @@
   "name": "my-design",
   "version": "1.0.0",
   "description": "",
+  "type": "module",
   "main": "./js/script.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -16,7 +17,8 @@
   "dependencies": {
     "@babel/cli": "^7.12.1",
     "@babel/core": "^7.12.3",
-    "@babel/preset-env": "^7.12.1"
+    "@babel/preset-env": "^7.12.1",
+    "uuidv4": "^6.2.5"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",

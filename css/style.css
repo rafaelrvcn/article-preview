@@ -73,18 +73,69 @@ body {
     margin-left: -20px;
 }
 
-.icon {
+.icon-tooltip {
     border-radius: 50%;
     background-color: hsl(210, 46%, 95%);
     width: 22px;
     height: 22px;
     text-align: center;
-    vertical-align: middle;
     margin-top: 20px;
+    cursor: pointer;
+    display: block;
+    position: relative;
+}
+
+.tooltip {
+    position: absolute;
+    text-align: center;
+    visibility: hidden;
+    display: flex;
+    background-color: hsl(217, 19%, 35%);
+    color: #ffffff;
+    align-items: center;
+    align-content: space-around;
+    border-radius: 5px;
+    padding: 10px;
+    margin-left: -72px;
+    width: 130px;
+    height: 25px;
+}
+
+.tooltip:after {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border-bottom: 8px solid hsl(217, 19%, 35%);
+    border-right: 8px solid transparent;
+    border-left: 8px solid transparent;
+    transform: rotate(180deg);
+}
+
+.icon-tooltip:hover .tooltip {
+    visibility: visible;
+    bottom: 30px;
+    left: 0;
+    z-index: 999;
+}
+
+.tooltip:hover {
+    visibility: visible;
 }
 
 .arrow-icon {
     width: 10px;
     height: 10px;
     margin-bottom: 2px;
+}
+
+.icons {
+    margin-left: 10px;
+}
+
+.disable {
+    pointer-events: none;
+    opacity: 0.5;
 }
