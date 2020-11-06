@@ -9,7 +9,7 @@
     "babel": "babel-node ./js/script.js",
     "build": "babel js -d js-b --source-maps",
     "watch": "babel js -d js-b --source-maps --watch",
-    "start": "http-server -a localhost -p 8080 -c-1"
+    "start": "http-server -a localhost -p 3000 -c-1"
   },
   "keywords": [],
   "author": "",
