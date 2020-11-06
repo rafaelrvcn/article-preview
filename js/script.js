@@ -1,4 +1,7 @@
 import { share } from './share.js'
+import { uuidv4 } from './uuid.js'
+
+const id = uuidv4()
 
 share.map(status => {
     if ( status.actived === false ) {
@@ -12,7 +15,6 @@ share.map(status => {
 const navigatorHasShare = navigator.share
 const URL = 'http://localhost:3000/'
 const browser = document.querySelector("#browser")
-/* const title = "Paketá Academy - Article Preview" */
 
 const shareInfo = () => {
     navigator.share({
@@ -22,7 +24,7 @@ const shareInfo = () => {
 }
 
 const copyInfo = () => {
-    navigator.clipboard.writeText(`${shareInfo.title} - *Learn more about in* ${URL}/`)/* ${id} */
+    navigator.clipboard.writeText(`${shareInfo.title} - *Learn more about in* ${URL}/${id}`)
 }
 
 browser.addEventListener('click', () => {
